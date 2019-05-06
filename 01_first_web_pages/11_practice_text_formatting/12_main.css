@@ -4,11 +4,13 @@ body {
 }
 h1 {
   font-family: Georgia, serif;
+  color: blue;
 }
 
 code {
   font-family: monospace, sans-serif;
   text-decoration: underline;
   font-style: italic;
+  color: green;
 }
 
