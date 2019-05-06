@@ -1,0 +1,16 @@
+body {
+  font-size: 18px
+}
+mark {
+  font-family: Courier, monospace;
+  font-size: 12px;
+}
+
+mark strong{
+  font-size: 18px;
+}
+
+mark strong em {
+  font-size: 20px;
+  text-transform: uppercase;
+}
