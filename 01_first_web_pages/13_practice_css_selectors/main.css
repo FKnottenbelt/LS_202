@@ -5,3 +5,8 @@ body {
 p {
   font-size: 18px;
 }
+
+li {
+  font-family: monospace;
+  color: purple;
+}
