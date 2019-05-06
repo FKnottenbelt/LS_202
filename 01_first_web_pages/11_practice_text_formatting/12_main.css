@@ -1,0 +1,14 @@
+body {
+  font-family: Helvitica, Arial, sans-serif;
+  font-size: 14px;
+}
+h1 {
+  font-family: Georgia, serif;
+}
+
+code {
+  font-family: monospace, sans-serif;
+  text-decoration: underline;
+  font-style: italic;
+}
+
