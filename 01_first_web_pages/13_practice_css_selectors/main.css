@@ -14,3 +14,7 @@ main li {
 a {
   text-decoration: none;
 }
+
+article p {
+  color: brown;
+}
