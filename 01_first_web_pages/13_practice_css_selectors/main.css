@@ -10,3 +10,7 @@ li {
   font-family: monospace;
   color: purple;
 }
+
+a {
+  text-decoration: none;
+}
