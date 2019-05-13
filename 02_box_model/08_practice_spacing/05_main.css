@@ -1,0 +1,12 @@
+div {
+  height: 300px;
+  width: 300px;
+}
+
+.red {
+  background-color: #fcc;
+}
+
+.blue {
+  background-color: #ccf;
+}
