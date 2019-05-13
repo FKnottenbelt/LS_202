@@ -9,4 +9,5 @@ div {
 
 .blue {
   background-color: #ccf;
+  border: 5px solid blue;
 }
