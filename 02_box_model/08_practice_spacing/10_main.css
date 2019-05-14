@@ -15,7 +15,8 @@ li {
   box-sizing: border-box;
   display: inline-block;
   line-height: 120px;
+  margin: 0 1%;
   min-height: 120px;
   text-align: center;
-  width: 25%;
+  width: 23%;
 }
