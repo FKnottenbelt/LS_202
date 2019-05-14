@@ -1,10 +1,12 @@
 div {
   height: 300px;
   width: 300px;
+  box-sizing: border-box;
 }
 
 .red {
   background-color: #fcc;
+  padding: 20px;
 }
 
 .blue {
