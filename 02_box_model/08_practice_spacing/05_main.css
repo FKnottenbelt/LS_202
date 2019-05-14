@@ -1,7 +1,9 @@
 div {
-  height: 300px;
-  width: 300px;
   box-sizing: border-box;
+  display: inline-block;
+  height: 300px;
+  vertical-align: top;
+  width: 300px;
 }
 
 .red {
