@@ -6,6 +6,7 @@ body, main, figure, figcaption, img {
 figure {
   margin: 50px;
   outline: 1px solid red;
+  width: 50%;
 }
 
 img {
