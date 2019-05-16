@@ -4,6 +4,7 @@ body, main, figure, figcaption, img {
 }
 
 figure {
+  display: inline-block;
   margin: 50px;
   outline: 1px solid red;
   width: 50%;
