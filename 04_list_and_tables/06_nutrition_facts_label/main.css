@@ -15,17 +15,19 @@ html {
 article {
   border: 2px solid black;
   margin-left: 1px;
+  width: 678px;
 }
 
 .label {
   margin-left: 15px;
+  margin-right: 15px;
   margin-top: 10px;
 }
+
 /* header */
 
 header {
-  border-bottom: 30px solid black;
-  padding-bottom: 6px;
+  outline: 1px solid red;
 }
 
 header h1 {
@@ -36,6 +38,49 @@ header h1 {
 
 header p {
   margin: 0;
+}
+
+header h2 {
+  border-top: 30px solid black;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+/* header - table */
+header table {
+  width: 100%;
+  border-top: 1px solid black;
+  border-collapse: collapse;
+}
+
+header table td {
+  padding-top: 5px;
+}
+
+header table td:nth-child(1) {
+  text-align: left;
+  font-weight: bold;
+  width: 1%;
+}
+
+header table td:nth-child(2)  {
+  padding-left: 3px;
+}
+
+header table td:nth-child(3) {
+  text-align: right;
+}
+
+/* Nutriens table */
+.nutriens th:first-child {
+  text-align: left;
+}
+
+.nutriens th:second-child {
+  text-align: right;
 }
 
 /*table {*/
