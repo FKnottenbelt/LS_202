@@ -26,10 +26,6 @@ article {
 
 /* header */
 
-header {
-  outline: 1px solid red;
-}
-
 header h1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -75,48 +71,20 @@ header table td:nth-child(3) {
 }
 
 /* Nutriens table */
-.nutriens th:first-child {
-  text-align: left;
-}
 
-.nutriens th:second-child {
+section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutriens td:last-of-type {
   text-align: right;
 }
 
-/*table {*/
-/*  font-size: 1.5rem;*/
-/*}*/
-/*th {*/
-/*  font-size: 1.75rem;*/
-/*}*/
-/*tbody tr {*/
-/*  font-style: italic;*/
-/*}*/
-/*tbody tr:nth-child(1) {*/
-/*  color: red;*/
-/*}*/
-/*tbody tr:nth-child(2) {*/
-/*  color: green;*/
-/*}*/
-/*tbody tr:nth-child(3) {*/
-/*  color: blue;*/
-/*}*/
-/*tfoot tr {*/
-/*  font-size: 1rem;*/
-/*}*/
-/*tfoot td {*/
-/*  border-top: 1px solid gray;*/
-/*}*/
-/*td {*/
-/*  text-align: center;*/
-/*}*/
-/*[scope="col"] {*/
-/*  padding: 0 10px;*/
-/*  text-decoration: underline;*/
-/*}*/
-/*[scope="row"] {*/
-/*  text-transform: uppercase;*/
-/*}*/
+.indent {
+  text-indent: 20px;
+}
+
+
 
 
 .todo {
