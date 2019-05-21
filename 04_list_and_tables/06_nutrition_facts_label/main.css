@@ -72,19 +72,73 @@ header table td:nth-child(3) {
 
 /* Nutriens table */
 
+.nutriens {
+  margin-top: 3px;
+}
 section table {
   width: 100%;
   border-collapse: collapse;
+  border-top: 15px solid black;
 }
+
+.nutriens td {
+  border-bottom: 1px solid grey;
+}
+
+.nutriens tr:first-of-type td{
+  padding-top: 13px;
+}
+
+.nutriens tr > td:first-child:nth-last-child(n+3)
+{
+  width: 20px;
+  border-bottom: none;
+}
+
 .nutriens td:last-of-type {
   text-align: right;
 }
 
-.indent {
-  text-indent: 20px;
+.nutriens tr:last-of-type td {
+  border-bottom: none;
 }
 
+/* table minerals */
 
+.minerals {
+  margin-top: 3px;
+}
+
+.minerals td {
+  border-bottom: 1px solid grey;
+}
+
+.minerals td:last-of-type {
+  text-align: right;
+}
+
+/* Aside */
+
+aside {
+  font-size: .9rem;
+}
+
+ul {
+  font-size: 25px;
+  padding: 0 15px 15px 15px;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+
+li:before {
+  content: "*";
+  position: absolute;
+  left: -15px;
+}
 
 
 .todo {
