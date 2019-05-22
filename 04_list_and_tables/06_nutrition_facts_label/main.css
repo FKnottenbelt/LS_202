@@ -141,6 +141,20 @@ li:before {
 }
 
 
-.todo {
-  color: lightgrey;
+/* Amounts table */
+
+.amounts table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: none;
+  font-size: .8rem;
+}
+
+.amounts tr:first-of-type{
+  border-bottom: 1px solid grey;
+}
+
+.amounts tr > td:first-child:nth-last-child(n+5)
+{
+  width: 20px;
 }
