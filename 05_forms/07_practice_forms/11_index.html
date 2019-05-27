@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exercise 11</title>
+  <meta charset="utf-8" />
+  <style>
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .category, .tags {
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="#" method="get">
+    <fieldset>
+      <label for="search">Search for</label>
+      <input type="text" id="search" name="search" value="" required>
+
+      <fieldset class="category">
+        <ul>
+          <li>
+            <input type="radio" id="core" name="filter" value="core">
+            <label for="core">Core</label>
+          </li>
+          <li>
+            <input type="radio" id="plugins" name="filter" value="plugins">
+            <label for="plugins">Plugins</label></label>
+          </li>
+          <li>
+            <input type="radio" id="libraries" name="filter" value="libraries">
+            <label for="libraries">Libraries</label>
+          </li>
+          <li>
+            <input type="radio" id="conventions" name="filter" value="conventions">
+            <label for="conventions">Conventions</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="tags">
+        <input type="checkbox" id="html" name="tag" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="tag" value="css">
+        <label for="css">CSS</label></label>
+
+        <input type="checkbox" id="js" name="tag" value="js">
+        <label for="js">Javascript</label>
+
+        <input type="checkbox" id="ruby" name="tag" value="ruby">
+        <label for="ruby">Ruby</label>
+      </fieldset>
+
+      <button type="submit">Search</button>
+    </fieldset>
+
+  </form>
+
+</body>
+</html>
