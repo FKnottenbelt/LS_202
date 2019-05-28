@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <meta charset="utf-8" />
+
+  <style>
+    fieldset {
+      width: 25%;
+      border: none;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    dd {
+        margin: 0 0 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="#" method="post">
+    <fieldset>
+      <dl>
+        <dt><label for="first_name">First Name</label></dt>
+        <dd>
+          <input type="text" id="first_name" name="first_name" value="" required>
+        </dd>
+
+        <dt><label for="last_name">Last Name</label></dt>
+        <dd>
+          <input type="text" id="last_name" name="last_name" value="" required>
+        </dd>
+
+        <dt><label for="email">Email</label></dt>
+        <dd>
+          <input type="email" id="email" name="email" value="" required
+            autocomplete="off" autocorrect="off" autocapitalize="none"
+            placeholer="myname@addres.com">
+        </dd>
+
+        <dt><label for="city">City</label></dt>
+        <dd>
+          <input type="text" id="city" name="city" value="" required>
+        </dd>
+
+        <dt><label for="state">State</label></dt>
+        <dd>
+          <select name="state" id="state">
+            <option>AK</option>
+            <option>AL</option>
+            <option>AR</option>
+            <option>AZ</option>
+            <option>CA</option>
+            <option>CO</option>
+            <option>CT</option>
+            <option>DC</option>
+            <option>DE</option>
+            <option>FL</option>
+            <option>GA</option>
+            <option>HI</option>
+            <option>IA</option>
+            <option>ID</option>
+            <option>IL</option>
+            <option>IN</option>
+            <option>KS</option>
+            <option>KY</option>
+            <option>LA</option>
+            <option>MA</option>
+            <option>MD</option>
+            <option>ME</option>
+            <option>MI</option>
+            <option>MN</option>
+            <option>MO</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>NC</option>
+            <option>ND</option>
+            <option>NE</option>
+            <option>NH</option>
+            <option>NJ</option>
+            <option>NM</option>
+            <option>NV</option>
+            <option>NY</option>
+            <option>OH</option>
+            <option>OK</option>
+            <option>OR</option>
+            <option>PA</option>
+            <option>RI</option>
+            <option>SC</option>
+            <option>SD</option>
+            <option>TN</option>
+            <option>TX</option>
+            <option>UT</option>
+            <option>VA</option>
+            <option>VT</option>
+            <option>WA</option>
+            <option>WI</option>
+            <option>WV</option>
+            <option>WY</option>
+          </select>
+        </dd>
+
+        <dt><label for="zipcode">Zipcode</label></dt>
+        <dd>
+          <input type="text" id="zipcode" name="zipcode" value=""
+            placeholder="12345" pattern="[0-9]{5}" required>
+        </dd>
+
+        <dt><label for="colors">Which of these colors do you like best?</label></dt>
+        <dd>
+          <ul id="colors">
+            <li>
+              <input type="radio" id="red" name="filter" value="red" checked>
+              <label for="red">Red</label>
+            </li>
+            <li>
+              <input type="radio" id="green" name="filter" value="green">
+              <label for="green">Green</label>
+            </li>
+            <li>
+              <input type="radio" id="blue" name="filter" value="blue">
+              <label for="blue">Blue</label>
+            </li>
+          </ul>
+        </dd>
+
+        <dt><label for="tech">Which web technologies do you want to learn?</label></dt>
+        <dd>
+          <select name="tech" id="tech" multiple max="5">
+            <option selected>HTML</option>
+            <option>CSS</option>
+            <option>Javascript</option>
+          </select>
+        </dd>
+
+        <dt><label for="comments">Comments</label></dt>
+        <dd>
+          <textarea id="comments" name="comments" rows="6" columns="80"></textarea>
+        </dd>
+
+       <input type="hidden" id="timestamp" name="timestamp"
+        value="01-01-2019">
+
+
+       <button type="submit">Send</button>
+       <button type="reset">Clear Form</button>
+    </fieldset>
+
+  </form>
+
+</body>
+</html>

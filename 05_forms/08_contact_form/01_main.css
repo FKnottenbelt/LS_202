@@ -1,0 +1,14 @@
+fieldset {
+  width: 25%;
+  border: none;
+}
+label {
+  display: block;
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+
