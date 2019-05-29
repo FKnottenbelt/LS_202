@@ -6,8 +6,9 @@
 
   <style>
     fieldset {
-      width: 25%;
       border: none;
+      margin: 0 auto;
+      width: 25%;
     }
 
     ul {
@@ -15,8 +16,26 @@
       padding-left: 0;
     }
 
+    dt {
+      margin-bottom: 5px;
+    }
+
     dd {
-        margin: 0 0 25px;
+      margin: 0 0 25px;
+    }
+
+    [type="text"],
+    [type="email"],
+    [type="number"],
+    textarea {
+      box-sizing: border-box;
+      padding: 3px 10px;
+      width: 100%;
+    }
+
+    textarea {
+      height: auto;
+      resize: vertical;
     }
   </style>
 </head>
