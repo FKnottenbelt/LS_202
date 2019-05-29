@@ -57,9 +57,8 @@
 
         <dt><label for="email">Email</label></dt>
         <dd>
-          <input type="email" id="email" name="email" value="" required
-            autocomplete="off" autocorrect="off" autocapitalize="none"
-            placeholer="myname@addres.com">
+          <input type="email" id="email" name="email" placeholder="myname@addres.com"
+            value="" required autocomplete="off" autocapitalize="none">
         </dd>
 
         <dt><label for="city">City</label></dt>
@@ -130,9 +129,9 @@
             placeholder="12345" pattern="[0-9]{5}" required>
         </dd>
 
-        <dt><label for="colors">Which of these colors do you like best?</label></dt>
+        <dt><label>Which of these colors do you like best?</label></dt>
         <dd>
-          <ul id="colors">
+          <ul>
             <li>
               <input type="radio" id="red" name="filter" value="red" checked>
               <label for="red">Red</label>
@@ -150,7 +149,7 @@
 
         <dt><label for="tech">Which web technologies do you want to learn?</label></dt>
         <dd>
-          <select name="tech" id="tech" multiple max="5">
+          <select name="tech" id="tech" multiple size="5">
             <option selected>HTML</option>
             <option>CSS</option>
             <option>Javascript</option>
@@ -159,12 +158,12 @@
 
         <dt><label for="comments">Comments</label></dt>
         <dd>
-          <textarea id="comments" name="comments" rows="6" columns="80"></textarea>
+          <textarea id="comments" name="comments" rows="6" cols="80"></textarea>
         </dd>
+      </dl>
 
        <input type="hidden" id="timestamp" name="timestamp"
         value="01-01-2019">
-
 
        <button type="submit">Send</button>
        <button type="reset">Clear Form</button>
