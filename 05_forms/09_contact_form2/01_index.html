@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form2</title>
+  <meta charset="utf-8" />
+
+  <style>
+    fieldset {
+      border: none;
+      margin: 0 auto;
+      width: 25%;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    dt {
+      margin-bottom: 5px;
+    }
+
+    dd {
+      margin: 0 0 25px;
+    }
+
+    [type="text"],
+    [type="email"],
+    [type="number"],
+    textarea {
+      box-sizing: border-box;
+      padding: 3px 10px;
+      width: 100%;
+    }
+
+    textarea {
+      height: auto;
+      resize: vertical;
+    }
+
+    .name, .address {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+    .name dd, .address dd {
+      margin-bottom: 0;
+    }
+
+    .ten_percent_width {
+      width: 10%;
+      padding-left: 5px;
+    }
+
+    .forty_percent_width {
+      width: 40%;
+      padding-left: 17px;
+    }
+
+    .fifthy_percent_width {
+      width: 50%;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <form action="#" method="post">
+    <fieldset>
+
+      <dl class="name">
+        <dt><label for="first_name">First Name</label></dt>
+        <dd><input type="text" name="first_name" id="first_name" /></dd>
+      </dl>
+      <dl class="name">
+        <dt><label for="last_name">Last Name</label></dt>
+        <dd><input type="text" name="last_name" id="last_name" /></dd>
+      </dl>
+
+      <dl>
+        <dt><label for="email">Email Address</label></dt>
+        <dd><input type="email" name="email" id="email" /></dd>
+      </dl>
+
+      <dl class="address fifthy_percent_width">
+        <dt><label for="city">City</label></dt>
+        <dd><input type="text" name="city" id="city" /></dd>
+      </dl><!--
+      --><dl class="address ten_percent_width">
+        <dt> <label for="state">State</label> </dt>
+        <dd>
+          <select name="state" id="state">
+            <option>AK</option>
+            <option>AL</option>
+            <!-- other states -->
+            <option>WV</option>
+            <option>WY</option>
+          </select>
+        </dd>
+      </dl><!--
+      --><dl class="address forty_percent_width">
+        <dt><label for="zip">Zip</label></dt>
+        <dd><input type="number" name="zip" id="zip" min="0" max="99999" /></dd>
+      </dl>
+
+      <dl>
+        <dt><label>Which of these colors do you like best?</label></dt>
+        <dd>
+          <ul>
+            <li>
+              <input type="radio" id="red" name="filter" value="red" checked>
+              <label for="red">Red</label>
+            </li>
+            <li>
+              <input type="radio" id="green" name="filter" value="green">
+              <label for="green">Green</label>
+            </li>
+            <li>
+              <input type="radio" id="blue" name="filter" value="blue">
+              <label for="blue">Blue</label>
+            </li>
+          </ul>
+        </dd>
+
+        <dt><label for="tech">Which web technologies do you want to learn?</label></dt>
+        <dd>
+          <select name="tech" id="tech" multiple size="5">
+            <option selected>HTML</option>
+            <option>CSS</option>
+            <option>Javascript</option>
+          </select>
+        </dd>
+
+        <dt><label for="comments">Comments</label></dt>
+        <dd>
+          <textarea id="comments" name="comments" rows="6" cols="80"></textarea>
+        </dd>
+      </dl>
+
+       <input type="hidden" id="timestamp" name="timestamp"
+        value="01-01-2019">
+
+       <button type="submit">Send</button>
+       <button type="reset">Clear Form</button>
+    </fieldset>
+
+  </form>
+
+</body>
+</html>
