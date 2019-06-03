@@ -1,0 +1,44 @@
+body {
+  /*font-family: normal 16px Helvetica, Arial, sans-serif;*/
+}
+.container {
+  border: 2px solid grey;
+  margin: 0 auto;
+  width: 1000px;
+  outline: 1px solid blue;
+}
+
+section {
+  padding: 20px;
+  outline: 1px solid red;
+}
+
+h1 {
+  color: #ce4a4a;
+  font-weight: bold;
+}
+
+h2 {
+  color: #ce4a4a;
+}
+h3 {
+  color: #ce4a4a;
+}
+p {
+  /*padding: 20px;*/
+}
+
+.border {
+  border-style: dashed;
+  border-color: grey;
+  margin-left: 50px;
+  margin-right: 263px;
+  padding-left: 32px;
+
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
