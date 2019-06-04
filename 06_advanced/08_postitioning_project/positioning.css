@@ -1,5 +1,6 @@
 body {
-  /*font-family: normal 16px Helvetica, Arial, sans-serif;*/
+  font: normal 16px Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 .container {
   border: 2px solid grey;
@@ -24,21 +25,78 @@ h2 {
 h3 {
   color: #ce4a4a;
 }
-p {
-  /*padding: 20px;*/
+
+section > p {
+  line-height: 35px;
+  margin-bottom: 25px;
 }
+
 
 .border {
   border-style: dashed;
   border-color: grey;
   margin-left: 50px;
   margin-right: 263px;
-  padding-left: 32px;
-
+  padding: 32px;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
-  display: inline-block;
   color: inherit;
+}
+
+.inline-margin a {
+  margin: 30px;
+}
+
+.inline-padding a {
+  padding: 30px;
+  background-color: green;
+  color: white;
+}
+
+.inline-float a {
+  float: left;
+  border: 3px solid darkgreen;
+  margin: 15px;
+  padding: 25px;
+  text-align: center;
+  width: 60px;
+}
+
+.block-no-height {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.block-with-height {
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+  background-color: green;
+  color: white;
+}
+
+.block-with-width {
+  background-color: tomato;
+  color: white;
+  width: 90px;
+}
+
+.block-with-width-and-height {
+  background-color: pink;
+  color: white;
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.box-float-left {
+  float: left;
+}
+
+.box-float-right {
+  float: right;
 }

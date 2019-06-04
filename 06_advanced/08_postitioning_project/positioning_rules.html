@@ -28,63 +28,93 @@
 
       <h2>What happens when we set a margin on an inline-level element?</h2>
 
-      Inline elements ignore top and bottom margins but observe the left and right margins.
+      <p>Inline elements ignore top and bottom margins but observe the left and right margins.
+      </p>
 
-        Home
-        Portfolio
-        Contact
+      <div class="border inline-margin">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
 
-      In the above example, we requested a margin of 30px on all sides. However, the browser ignored the top and bottom margins.
+      <p>In the above example, we requested a margin of 30px on all sides. However, the browser ignored the top and bottom margins.
+      </p>
 
       <h2>What about padding?</h2>
 
-        Home
-        Portfolio
-        Contact
+      <div class="border inline-padding">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
 
-      Inline elements accept padding on all sides.
+      <p>Inline elements accept padding on all sides.</p>
 
       <h2>Floating Inline Elements</h2>
 
-        Home
-        Portfolio
-        Contact
+      <div class="border inline-float inline-padding">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
 
-      Floating an inline element changes its display value to block, which makes it subject to all block-level characteristics. Thus, floated inline elements can take margins, padding, heights, and widths.
+      <p>Floating an inline element changes its display value to block, which makes it subject to all block-level characteristics. Thus, floated inline elements can take margins, padding, heights, and widths.
+      </p>
     </section>
-    <section>
+
+    <section class="block-elements">
       <h1>Block Elements</h1>
 
-      Block-level elements require the entire width of the page and always start a new line. They can have margins and padding. When you omit the width, block elements expand to fill their parent container's natural width; when you omit the height, they expand to fit the content.
+      <p>Block-level elements require the entire width of the page and always start a new line. They can have margins and padding. When you omit the width, block elements expand to fill their parent container's natural width; when you omit the height, they expand to fit the content.
+      </p>
 
       <h2>Example</h2>
 
-      `div` elements are block-level.
+      <p>`div` elements are block-level.</p>
 
-      This div has no explicit width or height.
+      <div class="block-no-height">
+        <p>This <code>div</code> has no explicit width or height.</p>
+      </div>
 
       Without an explicit width or height, the box fills the entire width and uses as much height as it needs to fit the content.
 
-      This div has no explicit width but a height of 60px; it also has both padding and margins of 20px on all sides.
+      <div class="block-with-height">
+        <p>This <code>div</code> has no explicit width but a height of 60px; it also has both padding and margins of 20px on all sides.
+        </p>
+      </div>
 
-      With an explicit height of 60px plus margins and padding, the box still fills the entire width (including the padding and margins), but now requires the requested height.
+      <p>With an explicit height of 60px plus margins and padding, the box still fills the entire width (including the padding and margins), but now requires the requested height.
+      </p>
 
-      This div has a width of 90px and no explicit height.
+      <div class="block-with-width">
+        <p>This div has a width of 90px and no explicit height.</p>
+      </div>
 
-      With an explicit width of 90px, the box collapses down to 90px width but expands the height to ensure the text still fits.
+      <p>With an explicit width of 90px, the box collapses down to 90px width but expands the height to ensure the text still fits.
+      </p>
 
+      <div class="block-with-width-and-height">
       This div has a width of 180px and a height of 120px; it also has both padding and margins of 20px on all sides.
+      </div>
 
-      With an explicit width of 180px and height of 120px, the box takes on the requested dimensions. However, the content can overflow the box as it does here.
+      <p>With an explicit width of 180px and height of 120px, the box takes on the requested dimensions. However, the content can overflow the box as it does here.
+      </p>
+    </section>
 
+    <section class="floating-block-elements">
       <h2>Floating Block Elements</h2>
 
       <h3>Floating block elements with no width or height</h3>
 
-      Box - 1 - Floated Left
-      Box - 2 - Floated Right
+      <div class="box-float-left">
+        <p>Box - 1 - Floated Left</p>
+      </div>
+      <div class="box-float-right">
+        <p>Box - 2 - Floated Right</p>
+      </div>
 
-      Floated block-level elements that don't have a width collapse down to the width required by the content. Thus, multiple floated blocks can fit on the same line as shown above where we float one item left and the other right.
+      <p>Floated block-level elements that don't have a width collapse down to the width required by the content. Thus, multiple floated blocks can fit on the same line as shown above where we float one item left and the other right.
+      </p>
 
       <h3>Floating block elements with width and height set.</h3>
 
