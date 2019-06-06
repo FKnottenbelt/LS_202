@@ -106,11 +106,13 @@
 
       <h3>Floating block elements with no width or height</h3>
 
-      <div class="box-float-left">
-        <p>Box - 1 - Floated Left</p>
-      </div>
-      <div class="box-float-right">
-        <p>Box - 2 - Floated Right</p>
+      <div class="wrapper">
+        <div class="box-float-left">
+          Box - 1 - Floated Left
+        </div>
+        <div class="box-float-right">
+          Box - 2 - Floated Right
+        </div>
       </div>
 
       <p>Floated block-level elements that don't have a width collapse down to the width required by the content. Thus, multiple floated blocks can fit on the same line as shown above where we float one item left and the other right.
@@ -118,8 +120,14 @@
 
       <h3>Floating block elements with width and height set.</h3>
 
-      Box - 1 - Floated Left
-      Box - 2 - Floated Right
+      <div class="wrapper">
+        <div class="box-float-left float-width-and-height">
+          Box - 1 - Floated Left
+        </div>
+        <div class="box-float-right float-width-and-height">
+          Box - 2 - Floated Right
+        </div>
+      </div>
 
       When you specify the widths on floated block-level elements, the browser will observe the widths. In the above example, our blocks have widths of 40% and 50%.
 

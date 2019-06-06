@@ -93,10 +93,28 @@ a {
   margin: 20px;
 }
 
+.wrapper {
+  overflow: hidden;
+}
 .box-float-left {
   float: left;
+  background-color: dodgerblue;
+  border: 1px solid red;
+  color: white;
 }
 
 .box-float-right {
   float: right;
+  background-color: tomato;
+  border: 1px solid red;
+  color: white;
+}
+
+.box-float-left .float-width-and-height {
+  width: 40%;
+  padding: 20px;
+}
+
+.box-float-right .float-width-and-height {
+  width: 50%;
 }
