@@ -6,12 +6,10 @@ body {
   border: 2px solid grey;
   margin: 0 auto;
   width: 1000px;
-  outline: 1px solid blue;
 }
 
 section {
   padding: 20px;
-  outline: 1px solid red;
 }
 
 h1 {
@@ -95,6 +93,7 @@ a {
 
 .wrapper {
   overflow: hidden;
+  margin-bottom: 35px;
 }
 .box-float-left {
   float: left;
@@ -110,11 +109,89 @@ a {
   color: white;
 }
 
-.box-float-left .float-width-and-height {
+.float-width-and-height {
+  padding: 25px 0;
+  border: none;
+  text-align: center;
+}
+.box-float-left.float-width-and-height {
+  background-color: tomato;
   width: 40%;
-  padding: 20px;
 }
 
-.box-float-right .float-width-and-height {
+.box-float-right.float-width-and-height {
+  background-color: dodgerblue;
   width: 50%;
+}
+
+.inline-to-block a{
+  display: block;
+  background-color: dodgerblue;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.inline-block a {
+  background-color: dodgerblue;
+  margin: 20px 8px 25px;
+  padding: 20px 60px;
+}
+
+.inline-block {
+  margin: 35px 70px;
+}
+
+.floats {
+  border-top: 2px dashed grey;
+}
+
+.floats h1 {
+  text-align: center;
+}
+
+.float-box {
+  color: white;
+  text-align: center;
+}
+.box1 {
+  background-color: tomato;
+  width: 50%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.box2 {
+  background-color: dodgerblue;
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.box3 {
+  background-color: green;
+  clear: both;
+  padding: 25px;
+}
+
+ul {
+  font-style: italic;
+  padding-left: 82px;
+  margin-bottom: 35px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.fixed {
+  background-color: dodgerblue;
+  padding: 35px;
+  position: fixed;
+  bottom: 50px;
+  left: 25px;
+  color: white;
+  border-radius: 1em;
 }
