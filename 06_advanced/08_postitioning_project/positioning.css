@@ -1,66 +1,70 @@
 body {
-  font: normal 16px Helvetica, Arial, sans-serif;
+  font: normal 1rem Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
 .container {
   border: 2px solid grey;
   margin: 0 auto;
-  width: 1000px;
+  width: 64%;
 }
 
 section {
-  padding: 20px;
+  padding: 0 1.25em;
 }
 
 h1 {
   color: #ce4a4a;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 h2 {
   color: #ce4a4a;
+  font-size: 1.25em;
 }
 h3 {
   color: #ce4a4a;
+  font-size: 1rem;
 }
 
 section > p {
-  line-height: 35px;
+  line-height: 2.2;
   margin-bottom: 25px;
+  margin-bottom: 1.6em;
 }
 
 
 .border {
   border-style: dashed;
   border-color: grey;
-  margin-left: 50px;
-  margin-right: 263px;
-  padding: 32px;
+  margin-left: 3.1em;
+  margin-right: 16.4em;
+  padding: 2em;
   overflow: hidden;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .inline-margin a {
-  margin: 30px;
+  margin: 1.9em;
 }
 
 .inline-padding a {
-  padding: 30px;
   background-color: green;
   color: white;
+  padding: 1.9em;
 }
 
 .inline-float a {
-  float: left;
   border: 3px solid darkgreen;
-  margin: 15px;
-  padding: 25px;
+  float: left;
+  margin: 0.9em;
+  padding: 1.6em;
   text-align: center;
-  width: 60px;
+  width: 3.75em;
 }
 
 .block-no-height {
@@ -69,11 +73,11 @@ a {
 }
 
 .block-with-height {
+  background-color: green;
+  color: white;
   height: 60px;
   padding: 20px;
   margin: 20px;
-  background-color: green;
-  color: white;
 }
 
 .block-with-width {
@@ -85,33 +89,38 @@ a {
 .block-with-width-and-height {
   background-color: pink;
   color: white;
-  width: 120px;
   height: 120px;
   padding: 20px;
   margin: 20px;
+  width: 120px;
 }
 
 .wrapper {
-  overflow: hidden;
   margin-bottom: 35px;
+  overflow: hidden;
 }
+
+.floating-block-elements {
+  padding-bottom: 20px;
+}
+
 .box-float-left {
-  float: left;
   background-color: dodgerblue;
   border: 1px solid red;
   color: white;
+  float: left;
 }
 
 .box-float-right {
-  float: right;
   background-color: tomato;
   border: 1px solid red;
   color: white;
+  float: right;
 }
 
 .float-width-and-height {
-  padding: 25px 0;
   border: none;
+  padding: 25px 0;
   text-align: center;
 }
 .box-float-left.float-width-and-height {
@@ -125,10 +134,10 @@ a {
 }
 
 .inline-to-block a{
-  display: block;
   background-color: dodgerblue;
-  padding: 10px;
+  display: block;
   margin: 10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -156,18 +165,18 @@ a {
 }
 .box1 {
   background-color: tomato;
-  width: 50%;
+  box-sizing: border-box;
   float: left;
   padding: 50px;
-  box-sizing: border-box;
+  width: 50%;
 }
 
 .box2 {
   background-color: dodgerblue;
-  width: 50%;
-  float: right;
   box-sizing: border-box;
+  float: right;
   padding: 50px;
+  width: 50%;
 }
 
 .box3 {
@@ -178,8 +187,8 @@ a {
 
 ul {
   font-style: italic;
-  padding-left: 82px;
   margin-bottom: 35px;
+  padding-left: 82px;
 }
 
 ul li {
@@ -188,24 +197,24 @@ ul li {
 
 .fixed {
   background-color: dodgerblue;
+  bottom: 50px;
+  border-radius: 1em;
+  color: white;
+  left: 25px;
   padding: 35px;
   position: fixed;
-  bottom: 50px;
-  left: 25px;
-  color: white;
-  border-radius: 1em;
 }
 
 .relative {
   background-color: tomato;
+  border-radius: 1em;
+  color: white;
+  left: -50px;
   padding: 25px;
   position: relative;
-  top: 35px;
-  left: -50px;
-  width: 25%;
-  color: white;
-  border-radius: 1em;
   text-align: center;
+  top: 35px;
+  width: 25%;
 }
 
 .absolute-positioning {
@@ -214,13 +223,13 @@ ul li {
 
 .absolute {
   background-color: green;
+  border-radius: 1em;
+  color: white;
+  left: 300px;
   padding: 25px 10px;
   position: absolute;
-  top: 10px;
-  left: 300px;
-  width: 15%;
-  color: white;
-  border-radius: 1em;
   text-align: center;
+  top: -30px;
+  width: 15%;
 }
 
