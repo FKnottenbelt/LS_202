@@ -48,6 +48,14 @@ a:hover {
   color: yellow;
 }
 
+main {
+  display: flex;
+}
+
+article {
+  flex: 2;
+}
+
 article,
 aside {
   padding: 0 1rem;
@@ -55,6 +63,7 @@ aside {
 
 aside {
   background-color: lightgreen;
+  flex: 1;
 }
 
 p {
@@ -63,12 +72,24 @@ p {
 
 footer {
   background-color: yellow;
+  display: flex;
 }
 
 #copyright {
-  margin: 0 1rem;
+  margin: auto;
+  margin-right: 1rem;
+  order: 2;
+
 }
 
 #logo {
+  align-content: stretch;
   background-color: orange;
+  display: flex;
+  order: 1;
+
+}
+
+img {
+    height: 200px;
 }
