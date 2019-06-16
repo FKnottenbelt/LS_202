@@ -14,18 +14,18 @@ main {
   grid-template-rows: 1fr 4.6fr 1fr;
   grid-template-columns: 1fr;
   grid-template-areas:
-   "title"
-   "main"
-   "footer";
+    "title"
+    "main"
+    "footer";
+  margin: 0 auto;
   max-width: 1000px;
   min-width: 500px;
-  margin: 0 auto;
 }
 
 header {
+  align-self: center;
   font-size: 2rem;
   grid-area: title;
-  align-self: center;
   justify-self: center;
 }
 
@@ -34,24 +34,26 @@ figure {
 }
 
 img {
-  width: 100%;
   display: block;
   object-fit: cover;
+  width: 100%;
 }
 
 figure img {
   border: 10px solid #f0f0f0;
   box-sizing: border-box;
 }
+
 .small-images {
-  grid-area: footer;
   display: flex;
+  flex-wrap: wrap;
+  grid-area: footer;
   justify-content: space-between;
 }
 
-div div {
-  width: 23%;
-  box-sizing: border-box;
+.thumbnail {
   border: 3px solid #f0f0f0;
+  box-sizing: border-box;
+  width: 23%;
 }
 
