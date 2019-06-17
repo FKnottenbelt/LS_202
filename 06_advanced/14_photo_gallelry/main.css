@@ -10,7 +10,7 @@ html {
 }
 
 main {
-  background-color:  #333;
+  background-color: #333;
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 1fr 4.6fr 1fr;
@@ -22,7 +22,7 @@ main {
   margin: 0 auto;
   max-width: 1000px;
   min-width: 500px;
-  padding: 20px;
+  padding: 1.25em;
 }
 
 header {
