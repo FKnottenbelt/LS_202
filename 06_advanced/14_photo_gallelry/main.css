@@ -24,9 +24,12 @@ main {
 
 header {
   align-self: center;
-  font-size: 2rem;
   grid-area: title;
   justify-self: center;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 figure {
