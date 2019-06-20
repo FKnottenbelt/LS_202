@@ -1,0 +1,35 @@
+@import url("whitespace-reset.css");
+
+html{
+  font-family: 20px "Nunito Sans", sans-serif;
+}
+
+body {
+  background-image: url("bg_body.gif");
+}
+
+article {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 158px;
+  position: relative;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  display:inline-block;
+  margin: 0 auto;
+  padding-bottom: 94px;
+}
+
+main {
+  background-color: white;
+}
+
+footer {
+  background-color: #e7e7e7;
+}
+
