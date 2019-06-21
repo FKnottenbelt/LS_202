@@ -1,7 +1,12 @@
 @import url("whitespace-reset.css");
 
+* {
+  box-sizing: border-box;
+}
+
 html{
-  font-family: 20px "Nunito Sans", sans-serif;
+  font: 400 20px "Nunito Sans", sans-serif;
+  text-align: center;
 }
 
 body {
@@ -11,7 +16,7 @@ body {
 article {
   width: 1000px;
   margin: 0 auto;
-  padding-top: 158px;
+  padding-top: 7.9em;
   position: relative;
 }
 
@@ -22,14 +27,52 @@ header {
 header img {
   display:inline-block;
   margin: 0 auto;
-  padding-bottom: 94px;
+  padding-bottom: 4.5em;
 }
 
 main {
   background-color: white;
 }
 
-footer {
-  background-color: #e7e7e7;
+h2 {
+  font: 600 1.8rem "Nunito Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
+h2::before, h2::after {
+  content: "\2022";
+  font-size: 1.4rem;
+  padding: 0 1.3rem 0 1.2rem;
+}
+
+main article {
+  padding: 5.3em 4.5em 0;
+}
+
+main {
+  padding-bottom: 3.5em;
+}
+
+h3 {
+  color: #3e98b2;
+  font: 800 1.2rem "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+footer {
+  background-color: #e7e7e7;
+  margin-bottom: 7.2em;
+  padding-top: 1.6em;
+
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 9em;
+}
+
+a {
+  text-decoration: none;
+}
