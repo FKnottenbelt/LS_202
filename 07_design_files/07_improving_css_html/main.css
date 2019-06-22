@@ -1,0 +1,65 @@
+html {
+  font: normal 14px Helvetica, Arial, sans-serif;
+}
+
+body {
+  color: #222222;
+  background: #2E0927;
+}
+
+#header {
+  padding: 1rem 2.5rem;
+  background: #FF2D00;
+}
+
+#header img {
+  width: 80px;
+}
+
+#header #navigation {
+  float: right;
+}
+
+#header #navigation a {
+  margin-left: .8rem;
+}
+
+#main {
+  padding: 2rem 2.5rem;
+  background: #ffffff;
+}
+
+p {
+  text-indent: 1rem;
+}
+
+.circle {
+  list-style: circle;
+}
+
+.technologies {
+  padding-bottom: 1rem;
+}
+
+.technologies .tech {
+  padding: 0 0 .5rem 0;
+  margin: 0;
+  font-weight: bold;
+  text-indent: 0;
+}
+.technologies .description {
+  padding: 0 0 .5rem 0;
+  margin: 0;
+  text-indent: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: .8rem 1.2rem;
+  background: #04756F;
+}
+
+.button a {
+  text-decoration: none;
+  color: #FF8C00;
+}
