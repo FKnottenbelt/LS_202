@@ -13,15 +13,13 @@ body {
   background-image: url("bg_body.gif");
 }
 
-article {
+header, main, footer {
   width: 1000px;
   margin: 0 auto;
-  padding-top: 7.9em;
-  position: relative;
 }
-
 header {
   text-align: center;
+  padding-top: 7.9em;
 }
 
 header img {
