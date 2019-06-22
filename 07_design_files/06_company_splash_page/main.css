@@ -14,12 +14,13 @@ body {
 }
 
 header, main, footer {
-  width: 1000px;
   margin: 0 auto;
+  width: 1000px;
 }
+
 header {
-  text-align: center;
   padding-top: 7.9em;
+  text-align: center;
 }
 
 header img {
@@ -34,8 +35,8 @@ main {
 
 h2 {
   font: 600 1.8rem "Nunito Sans", sans-serif;
-  text-align: center;
   padding-bottom: 1em;
+  text-align: center;
 }
 
 h2::before, h2::after {
@@ -55,15 +56,14 @@ main {
 h3 {
   color: #3e98b2;
   font: 800 1.2rem "Nunito Sans", sans-serif;
-  text-align: center;
   padding-bottom: 1.2rem;
+  text-align: center;
 }
 
 footer {
   background-color: #e7e7e7;
   margin-bottom: 7.2em;
   padding-top: 1.6em;
-
 }
 
 ul {
