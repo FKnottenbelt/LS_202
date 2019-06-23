@@ -7,24 +7,34 @@ body {
   background: #2E0927;
 }
 
-#header {
-  padding: 1rem 2.5rem;
+header[role=banner] {
   background: #FF2D00;
+  padding: 1rem 2.5rem;
 }
 
-#header img {
+header[role=banner] img {
   width: 80px;
 }
 
-#header #navigation {
+header[role=banner] nav {
   float: right;
 }
 
-#header #navigation a {
+header[role=banner] ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header[role=banner] li {
+  display: inline;
+}
+
+header[role=banner] nav a {
   margin-left: .8rem;
 }
 
-#main {
+main {
   padding: 2rem 2.5rem;
   background: #ffffff;
 }
@@ -37,29 +47,28 @@ p {
   list-style: circle;
 }
 
-.technologies {
+dl {
   padding-bottom: 1rem;
 }
 
-.technologies .tech {
+dt, dd {
   padding: 0 0 .5rem 0;
   margin: 0;
-  font-weight: bold;
   text-indent: 0;
 }
-.technologies .description {
-  padding: 0 0 .5rem 0;
-  margin: 0;
-  text-indent: 0;
+
+dt {
+  font-weight: bold;
 }
 
 .button {
-  display: inline-block;
-  padding: .8rem 1.2rem;
   background: #04756F;
-}
-
-.button a {
-  text-decoration: none;
+  border: none;
   color: #FF8C00;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .8rem 1.2rem;
+  text-decoration: none;
 }
