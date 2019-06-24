@@ -1,0 +1,92 @@
+@import url("whitespace-reset.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font: normal 20px "Avenir", sans-serif;
+  text-align: center;
+  background-color: white;
+}
+
+header {
+  background-image: url("images/bg_body.gif");
+}
+
+header, main, footer {
+  width: 1199px;
+}
+
+header {
+  padding-top: 6.7em;
+  text-align: center;
+}
+
+header img {
+  display:inline-block;
+  margin: 0 auto;
+}
+
+header nav {
+  display: inline-block;
+  text-align: center;
+  color: #aaa9ac;
+  font-size: 1.3rem;
+}
+
+header nav li {
+  padding: 4.3em 1.5em 1.8em;
+}
+
+header nav .active {
+  color: #6db9ff;
+  font-weight: 600;
+}
+
+main {
+  background-color: white;
+}
+
+h2 {
+  font: 600 1.8rem "Nunito Sans", sans-serif;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+h2::before, h2::after {
+  content: "\2022";
+  font-size: 1.4rem;
+  padding: 0 1.3rem 0 1.2rem;
+}
+
+main article {
+  padding: 5.3em 4.5em 0;
+}
+
+main {
+  padding-bottom: 3.5em;
+}
+
+h3 {
+  color: #3e98b2;
+  font: 800 1.2rem "Nunito Sans", sans-serif;
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #e7e7e7;
+  margin-bottom: 7.2em;
+  padding: 1.5em 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 9em;
+}
+
+a {
+  text-decoration: none;
+}
