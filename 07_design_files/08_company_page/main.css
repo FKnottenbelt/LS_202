@@ -10,6 +10,10 @@ html{
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*********
    Header
 **********/
@@ -36,6 +40,11 @@ header nav {
   display: inline-block;
   text-align: center;
   font-size: 1.3rem;
+}
+
+header ul {
+  display: flex;
+  padding: 0 9em;
 }
 
 header nav li {
@@ -101,21 +110,17 @@ footer {
   padding: 1.5em 0;
 }
 
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 9em;
-}
-
-footer p {
-  padding: 1.9em;
-}
-
 footer ul {
-  padding-bottom: 1.9em;
+  padding: 1.9em 0;
 }
 
 /* 4 footer icons in one fixed image : sprite map */
+
+footer li {
+  display: inline-block;
+  padding: 0 2.95em;
+}
+
 footer li a {
   background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
   display: block;
@@ -137,10 +142,3 @@ footer li .instagram {
   background-position: 0 -138px;  /* 3 times 46 */
 }
 
-/*nav li:first-of-type {*/
-/*  margin-left: 17px;*/
-/*}*/
-
-a {
-  text-decoration: none;
-}
