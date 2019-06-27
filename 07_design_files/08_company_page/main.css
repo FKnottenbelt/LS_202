@@ -57,6 +57,7 @@ header nav .active {
 **********/
 main {
   background-color: white;
+  padding-top: 5.3em;
 }
 
 h2 {
@@ -72,15 +73,6 @@ h2::before, h2::after {
   padding: 0 1.3rem 0 1.2rem;
 }
 
-main {
-  padding-bottom: 3.5em;
-}
-
-main > h2 {
-  padding-top: 3.3em;
-  padding-bottom: 0;
-}
-
 main p {
   font-size: 1rem;
   font-weight: 500;
@@ -88,8 +80,7 @@ main p {
 }
 
 main article {
-  padding: 5.3em 9.5em 0;
-  outline: 1px solid red;
+  padding: 0 9.5em 2.25em;
 }
 
 h3 {
