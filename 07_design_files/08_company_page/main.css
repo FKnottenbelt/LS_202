@@ -17,9 +17,9 @@ header {
   background-image: url("images/bg_body.gif");
 }
 
-header, main, footer {
-  width: 1199px;
-  /*margin: 0 auto;*/
+main {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
 }
 
 header img {
-  display:inline-block;
+  display: block;
   margin: 0 auto;
 }
 
@@ -80,7 +80,8 @@ main p {
 }
 
 main article {
-  padding: 0 9.5em 2.25em;
+  padding-bottom: 2.25em;
+  outline: 1px solid red;
 }
 
 h3 {
@@ -135,6 +136,10 @@ footer li .email {
 footer li .instagram {
   background-position: 0 -138px;  /* 3 times 46 */
 }
+
+/*nav li:first-of-type {*/
+/*  margin-left: 17px;*/
+/*}*/
 
 a {
   text-decoration: none;
