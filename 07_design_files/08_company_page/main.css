@@ -10,6 +10,9 @@ html{
   background-color: white;
 }
 
+/*********
+   Header
+**********/
 header {
   background-image: url("images/bg_body.gif");
 }
@@ -49,12 +52,16 @@ header nav .active {
   font-weight: 600;
 }
 
+/*********
+   Main
+**********/
 main {
   background-color: white;
 }
 
 h2 {
-  font: 600 1.8rem "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
   padding-bottom: 1em;
   text-align: center;
 }
@@ -65,6 +72,15 @@ h2::before, h2::after {
   padding: 0 1.3rem 0 1.2rem;
 }
 
+main {
+  padding-bottom: 3.5em;
+}
+
+main > h2 {
+  padding-top: 3.3em;
+  padding-bottom: 0;
+}
+
 main p {
   font-size: 1rem;
   font-weight: 500;
@@ -73,10 +89,7 @@ main p {
 
 main article {
   padding: 5.3em 9.5em 0;
-}
-
-main {
-  padding-bottom: 3.5em;
+  outline: 1px solid red;
 }
 
 h3 {
@@ -87,7 +100,9 @@ h3 {
   text-align: center;
 }
 
-
+/*********
+   Footer
+**********/
 footer {
   background-color: #e7e7e7;
   color: #c5c5c5;
@@ -108,14 +123,14 @@ footer ul {
   padding-bottom: 1.9em;
 }
 
-/* 4 footer icons in one fixed image */
+/* 4 footer icons in one fixed image : sprite map */
 footer li a {
   background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
   display: block;
-  height: 46px;
+  height: 46px; /* make squares */
   overflow: hidden;
-  text-indent: -8685px;
-  width: 46px;
+  text-indent: -8685px; /*hiding text by pushing it of the page */
+  width: 46px; /* make squares */
 }
 
 footer li .facebook {
@@ -123,11 +138,11 @@ footer li .facebook {
 }
 
 footer li .email {
-  background-position: 0 -92px;
+  background-position: 0 -92px; /* 2 times 46 */
 }
 
 footer li .instagram {
-  background-position: 0 -138px;
+  background-position: 0 -138px;  /* 3 times 46 */
 }
 
 a {
