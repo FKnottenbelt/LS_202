@@ -90,7 +90,6 @@ main p {
 
 main article {
   padding-bottom: 2.25em;
-  outline: 1px solid red;
 }
 
 h3 {
@@ -100,6 +99,21 @@ h3 {
   padding-bottom: 1.2rem;
   text-align: center;
 }
+
+main nav {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+main ul {
+  display: flex;
+}
+
+main nav li {
+  padding: 4.3em 1.5em 1.8em;
+}
+
 
 /*********
    Footer
