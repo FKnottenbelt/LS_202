@@ -1,0 +1,14 @@
+@import url("whitespace-reset.css");
+
+html {
+  background-color: #ffd505;
+}
+
+header {
+  background-color: #047ec1;
+  color: white;
+}
+
+main {
+  background-color: #ececec;
+}
