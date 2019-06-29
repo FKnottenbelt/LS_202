@@ -30,22 +30,28 @@ main {
 h2 {
   font-size: 2rem;
   padding-left: 0.8em;
+  padding-top: 0.8em;
 }
 
 ul {
   display: grid;
-  grid-gap: 13px;
-  /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-  grid-template-rows: repeat(3, auto-fill);
+  grid-gap: 0.8em;
   grid-template-columns: repeat(4, 1fr);
+  padding: 1.6em;
 }
 
 li {
   background-color: white;
-  padding: 15px;
+  padding: 0.93em;
 }
 
 img {
-  height: 136px;
-  width: auto;
+  height: 160px;
+  display: block;
+  object-fit: contain;
+  width: 100%;
+}
+
+h3 {
+  padding-top: 1.4em;
 }
