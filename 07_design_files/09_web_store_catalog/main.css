@@ -8,10 +8,12 @@ html {
 body {
   margin: 0 22%;
 }
+
 header {
   background-color: #047ec1;
   border-bottom-left-radius: 1.5em;
   border-bottom-right-radius: 1.5em;
+  margin-bottom: 1.8em;
   padding: 1.9em 0 1.9em 1.5em;
 }
 
@@ -23,4 +25,27 @@ header h1 {
 
 main {
   background-color: #ececec;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-left: 0.8em;
+}
+
+ul {
+  display: grid;
+  grid-gap: 13px;
+  /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+  grid-template-rows: repeat(3, auto-fill);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+  background-color: white;
+  padding: 15px;
+}
+
+img {
+  height: 136px;
+  width: auto;
 }
