@@ -5,8 +5,9 @@ html {
   font: normal 16px Helvetica, Arial, sans-serif;
 }
 
-body {
-  margin: 0 22%;
+.wrapper {
+  margin: 0 auto;
+  width: 56.25em;
 }
 
 header {
