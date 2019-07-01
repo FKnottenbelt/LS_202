@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lightbox</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="lightbox.css">
+
+  <style>
+    div:target { color: green; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Using the :target selector
+       The href links to the id of the targeted element -->
+
+  <div id="foo">Foo Target Element</div>
+  <div id="bar">Bar Target Element</div>
+
+  <!-- links to change the URL hash -->
+  <a href="#foo">Activate Foo</a>
+  <a href="#_">Deactivate</a>
+  <a href="#bar">Activate Bar</a>
+
+  <br>
+
+  <!-- Lightbox usage markup -->
+
+  <!-- thumbnail image wrapped in a link -->
+  <a href="#img1">
+    <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-o7OOS3adV0M%2FTeBqWpWJBOI%2FAAAAAAAAACM%2FB9kXcVTD0a8%2Fs1600%2Fpig1.jpg&f=1"
+       alt="small pig">
+  </a>
+
+  <!-- lightbox container hidden with CSS -->
+  <a href="#_" class="lightbox" id="img1">
+    <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fside-view-big-pig-farm-59438216.jpg&f=1"
+      alt="Big pig">
+  </a>
+
+
+</body>
+</html>
