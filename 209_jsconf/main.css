@@ -1,1 +1,32 @@
 @import url("whitespace-reset.css");
+
+html {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+nav {
+  border-top: 0.76em solid #F5F5F5;
+  border-bottom: 1px solid #EEE;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  display: inline-block;
+  padding: 0.76em 2.1em;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+  text-decoration: underline;
+}
