@@ -5,7 +5,10 @@ html {
   font-size: 13px;
 }
 
+
+/*Navigation */
 nav {
+  background-color: white;
   border-top: 0.76em solid #F5F5F5;
   border-bottom: 1px solid #EEE;
   position: fixed;
@@ -15,6 +18,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 nav li {
@@ -30,3 +34,42 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/*Header banner */
+
+div[role="banner"] {
+  background: url("images/front.jpg") center no-repeat  #8AA6E1;
+  background-size: cover;
+  height: 428px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 55px;
+  text-align: center;
+  width: 100%;
+  padding-top: 150px;
+
+}
+
+header h1 {
+  font-size: 72px;
+  color: white;
+  font-weight: normal;
+}
+
+header h2 {
+  font-size: 31px;
+  font-weight: normal;
+  color: white;
+}
+
+/*Small screens*/
+@media screen and (max-width: 650px){
+  nav {
+    display: none;
+  }
+
+  div[role="banner"] {
+    top: 0;
+  }
+}
+
