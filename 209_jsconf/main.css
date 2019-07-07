@@ -1,6 +1,7 @@
 @import url("whitespace-reset.css");
 
 html {
+  color: #444;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
 }
@@ -20,7 +21,10 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 71em;
 }
+
 nav li {
   display: inline-block;
   padding: 0.76em 2.1em;
@@ -37,8 +41,11 @@ nav a:hover {
 
 /*Header banner */
 
+header {
+  position: relative;
+}
 div[role="banner"] {
-  background: url("images/front.jpg") center no-repeat  #8AA6E1;
+  background: url("images/front.jpg") center no-repeat#8AA6E1;
   background-size: cover;
   height: 32.9em;
   position: relative;
@@ -47,6 +54,8 @@ div[role="banner"] {
   text-align: center;
   width: 100%;
   padding-top: 11.54em;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 
@@ -62,23 +71,15 @@ header h2 {
   color: white;
 }
 
-/*Small screens*/
-@media screen and (max-width: 650px){
-  nav {
-    display: none;
-  }
 
-  div[role="banner"] {
-    top: 0;
-  }
-}
 /* Section */
 
 section {
-  color: #444;
   text-align: center;
   padding-bottom: 4.46em;
   border-bottom: 1px solid #EEE;
+  max-width: 68em;
+  margin: 0 auto;
 }
 
 section h1 {
@@ -100,5 +101,49 @@ p {
   padding: 0.62em 1.87em;
   text-decoration: none;
 }
-/* Tickets */
 
+/* Speakers */
+
+.speakers ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  grid-row-gap: 15px
+}
+
+.speakers li {
+  height: 29em;
+  width: 21.5em;
+  outline: 1px solid #EEE;
+}
+
+.overlay {
+  display: none;
+}
+
+
+/*Small screens*/
+@media screen and (max-width: 650px){
+  nav {
+    display: none;
+  }
+
+  div[role="banner"] {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 408px){
+  nav {
+    display: none;
+  }
+
+  div[role="banner"] {
+    top: 0;
+    margin-right: 0;
+  }
+
+  header {
+    margin: 0 auto;
+  }
+}
