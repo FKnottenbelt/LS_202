@@ -4,73 +4,53 @@ html {
   color: #444;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
+  /*font-size: calc(1vw + 0.6em);*/
 }
 
 
 /*Navigation */
+
 nav {
-  background-color: white;
-  border-top: 0.76em solid #F5F5F5;
-  border-bottom: 1px solid #EEE;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+  display: none
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 71em;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0.76em 2.1em;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-nav a:hover {
-  text-decoration: underline;
+.banner {
+  top: 0;
 }
 
 /*Header banner */
 
 header {
-  position: relative;
-}
-div[role="banner"] {
   background: url("images/front.jpg") center no-repeat#8AA6E1;
   background-size: cover;
-  height: 32.9em;
-  position: relative;
-  top: 3.85em;
-  margin-bottom: 8em;
+  height: 26em;
+  margin-bottom: 4.5em;
   text-align: center;
-  width: 100%;
-  padding-top: 11.54em;
-  margin-right: auto;
-  margin-left: auto;
-
 }
 
+.banner {
+  position: relative;
+  top: 7.5em;
+  width: 100%;
+}
+
+.banner img {
+  width: 85px;
+  height: 85px;
+}
 header h1 {
-  font-size: 5.54rem;
   color: white;
+  font-size: 3.5rem;
+  /*font-size: 40px;*/
   font-weight: normal;
 }
 
 header h2 {
   font-size: 2.4rem;
+  font-size: 20px;
   font-weight: normal;
   color: white;
 }
-
 
 /* Section */
 
@@ -122,28 +102,54 @@ p {
 }
 
 
-/*Small screens*/
-@media screen and (max-width: 650px){
+/* circa Ipad size */
+@media (min-width: 35em){
   nav {
-    display: none;
+    background-color: white;
+    border-top: 0.76em solid #F5F5F5;
+    border-bottom: 1px solid #EEE;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
 
-  div[role="banner"] {
-    top: 0;
-  }
-}
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
 
-@media screen and (max-width: 408px){
-  nav {
-    display: none;
+  nav li {
+    padding: 0.76em 2em;
   }
 
-  div[role="banner"] {
-    top: 0;
-    margin-right: 0;
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  nav a:hover {
+    text-decoration: underline;
   }
 
   header {
+    height: 35em;
+  }
+  .banner {
+    padding-top: 8em;
     margin: 0 auto;
   }
+
+  .banner h1 {
+    font-size: 72px;
+  }
+  .banner h2 {
+    font-size: 31px;
+  }
+
+  .banner img {
+    width: 80px;
+    height: 80px;
+ }
 }
