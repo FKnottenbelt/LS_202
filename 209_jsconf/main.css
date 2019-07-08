@@ -14,17 +14,12 @@ nav {
   display: none
 }
 
-.banner {
-  top: 0;
-}
-
 /*Header banner */
 
 header {
   background: url("images/front.jpg") center no-repeat#8AA6E1;
   background-size: cover;
   height: 26em;
-  margin-bottom: 4.5em;
   text-align: center;
 }
 
@@ -38,6 +33,7 @@ header {
   width: 85px;
   height: 85px;
 }
+
 header h1 {
   color: white;
   font-size: 3.5rem;
@@ -46,8 +42,7 @@ header h1 {
 }
 
 header h2 {
-  font-size: 2.4rem;
-  font-size: 20px;
+  font-size: 1.53rem;
   font-weight: normal;
   color: white;
 }
@@ -56,7 +51,7 @@ header h2 {
 
 section {
   text-align: center;
-  padding-bottom: 4.46em;
+  padding: 4.46em;
   border-bottom: 1px solid #EEE;
   max-width: 68em;
   margin: 0 auto;
@@ -95,15 +90,52 @@ p {
   height: 29em;
   width: 21.5em;
   outline: 1px solid #EEE;
+  position: relative;
+}
+
+.speakers h2 {
+  color: green;
+  font-weight: 600;
+  font-size: 1.92rem;
+  padding-bottom: 0.38em;
+  padding-top: 1.53em;
 }
 
 .overlay {
-  display: none;
+  background: black;
+  color: white;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 0 1.15em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
+.overlay h2 {
+  margin-top: 0.3em;
+}
+
+.overlay p {
+  font-size: 1rem;
+  line-height: 15px;
+}
+.overlay a {
+  color: #008000;
+  font-weight: bold;
+}
+.overlay:hover{
+  opacity: 0.9;
+}
+
+/* BIGGER SCREENS */
 
 /* circa Ipad size */
 @media (min-width: 35em){
+
+  /*Navigation */
   nav {
     background-color: white;
     border-top: 0.76em solid #F5F5F5;
@@ -111,7 +143,7 @@ p {
     display: block;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
   }
 
   nav ul {
@@ -133,6 +165,7 @@ p {
     text-decoration: underline;
   }
 
+  /* Header */
   header {
     height: 35em;
   }
@@ -142,10 +175,10 @@ p {
   }
 
   .banner h1 {
-    font-size: 72px;
+    font-size: 5.54rem;
   }
   .banner h2 {
-    font-size: 31px;
+    font-size: 2.38rem
   }
 
   .banner img {
