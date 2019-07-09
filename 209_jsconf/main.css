@@ -130,6 +130,62 @@ p {
   opacity: 0.9;
 }
 
+/* Schedule */
+
+.schedule-table {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+tr {
+  position: relative;
+  display: block;
+}
+
+td {
+  border-top: 1px solid #EFEFEF;
+  padding: 0.76em;
+}
+
+.schedule-photo img {
+  width: 80px;
+}
+
+.schedule-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.schedule-hour {
+  font-size: 1.85rem;
+}
+
+.schedule h2 {
+  font-size: 1.85rem;
+  font-weight: normal;
+}
+
+.schedule h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.schedule a {
+  color: #008000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.schedule a:hover {
+  text-decoration: underline;
+}
+
+.schedule-tag {
+  display: inline-block;
+  padding: 0.07em 0.4em;
+  font-size: 0.53rem;
+  background: #EEE;
+  border: 1px solid #AAA;
+}
+
 /* BIGGER SCREENS */
 
 /* circa Ipad size */
@@ -184,5 +240,25 @@ p {
   .banner img {
     width: 80px;
     height: 80px;
- }
+  }
+
+  /* Schedule */
+
+  tr {
+    position: static;
+    display: table-row;
+  }
+  .schedule-photo img {
+    width: 100px;
+  }
+
+  .schedule-photo {
+    position: static;
+  }
+}
+
+@media (min-width: 50em){
+  .schedule-photo img {
+    width: 130px;
+  }
 }
