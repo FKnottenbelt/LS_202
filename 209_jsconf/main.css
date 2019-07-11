@@ -134,13 +134,18 @@ p {
 
 .schedule-table {
   display: grid;
-  grid-template-columns: 0.5fr 3fr 1fr;
-  justify-items: left;
+  grid-template-columns: 1fr;
+}
+
+.schedule-item {
+  border-top: 1px solid #EFEFEF;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .schedule-hour {
-  border-top: 1px solid #EFEFEF;
-  grid-column: 1/2;
+  flex: 0.5;
+  order: 2;
   width: 100%;
   text-align: left;
   font-size: 1.85rem;
@@ -148,18 +153,18 @@ p {
 }
 
 .schedule-event {
-  border-top: 1px solid #EFEFEF;
-  grid-column: 2/3;
+  flex: 3;
+  order: 3;
   width: 100%;
   text-align: left;
   padding: 10px 0;
 }
 
 .schedule-photo {
-  border-top: 1px solid #EFEFEF;
-  grid-column: 3/4;
+  flex: 1;
+  order: 1;
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
 }
 
@@ -254,6 +259,37 @@ p {
 
   /* Schedule */
 
+  .schedule-item {
+    border-top: 1px solid #EFEFEF;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    justify-items: left;
+  }
+
+  .schedule-hour {
+    grid-column: 1/2;
+    order: 1;
+    width: 100%;
+    text-align: left;
+    font-size: 1.85rem;
+    padding: 10px 5px 10px 0;
+  }
+
+  .schedule-event {
+    grid-column: 2/3;
+    order: 2;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .schedule-photo {
+    grid-column: 3/4;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
   .schedule-photo img {
     width: 100px;
   }
