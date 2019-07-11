@@ -133,37 +133,38 @@ p {
 /* Schedule */
 
 .schedule-table {
-  border-bottom: 1px solid #EFEFEF;
-  margin: 0 auto;
-  max-width: 68em;
-  text-align: left;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 1fr;
+  justify-items: left;
 }
 
-tr {
-  position: relative;
-  display: block;
+.schedule-hour {
   border-top: 1px solid #EFEFEF;
+  grid-column: 1/2;
+  width: 100%;
+  text-align: left;
+  font-size: 1.85rem;
+  padding: 10px 5px 10px 0;
 }
 
-td {
-  border: none;
-  padding: 0.76em;
-  display: block;
+.schedule-event {
+  border-top: 1px solid #EFEFEF;
+  grid-column: 2/3;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.schedule-photo {
+  border-top: 1px solid #EFEFEF;
+  grid-column: 3/4;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .schedule-photo img {
   width: 80px;
-}
-
-.schedule-photo {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.schedule-hour {
-  font-size: 1.85rem;
-  text-align: right;
-  padding: 20px;
 }
 
 .schedule h2 {
@@ -174,6 +175,7 @@ td {
 .schedule h3 {
   font-weight: 600;
   font-size: 18px;
+  text-align: left;
 }
 
 .schedule a {
@@ -251,16 +253,6 @@ td {
   }
 
   /* Schedule */
-
-  tr {
-    position: static;
-    display: block;
-  }
-
-  td {
-    padding: 0.76em;
-    display: table-cell;
-  }
 
   .schedule-photo img {
     width: 100px;
