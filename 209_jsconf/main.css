@@ -77,6 +77,11 @@ p {
   text-decoration: none;
 }
 
+a {
+  color: #008000;
+  font-weight: bold;
+  text-decoration: none;
+}
 /* Speakers */
 
 .speakers ul {
@@ -125,6 +130,7 @@ p {
 .overlay a {
   color: #008000;
   font-weight: bold;
+  text-decoration: underline;
 }
 .overlay:hover{
   opacity: 0.9;
@@ -183,12 +189,6 @@ p {
   text-align: left;
 }
 
-.schedule a {
-  color: #008000;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .schedule a:hover {
   text-decoration: underline;
 }
@@ -199,6 +199,46 @@ p {
   font-size: 0.53rem;
   background: #EEE;
   border: 1px solid #AAA;
+}
+
+/* Location */
+
+.location p {
+  text-align: left;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.location img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Call for papers */
+
+.callforpapers p {
+  text-align: left;
+}
+
+/* Sponsers */
+
+.sponsor-logo-platinum {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: left;
+}
+
+.sponsors p {
+  font-weight: bold;
+  text-align: left;
+}
+
+.sponsor-logo-gold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: left;
 }
 
 /* BIGGER SCREENS */
@@ -229,9 +269,10 @@ p {
 
   nav a {
     color: #444;
-    text-decoration: none;
     text-transform: uppercase;
+    font-weight: normal;
   }
+
   nav a:hover {
     text-decoration: underline;
   }
@@ -304,7 +345,4 @@ p {
     width: 130px;
   }
 
-  td {
-    display: table-cell;
-  }
 }
