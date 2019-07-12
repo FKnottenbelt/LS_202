@@ -7,7 +7,6 @@ html {
   /*font-size: calc(1vw + 0.6em);*/
 }
 
-
 /*Navigation */
 
 nav {
@@ -37,7 +36,6 @@ header {
 header h1 {
   color: white;
   font-size: 3.5rem;
-  /*font-size: 40px;*/
   font-weight: normal;
 }
 
@@ -82,6 +80,15 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
 /* Speakers */
 
 .speakers ul {
@@ -226,7 +233,7 @@ strong {
 
 .sponsor-logo-platinum {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 1fr);
   justify-items: left;
 }
 
@@ -237,11 +244,50 @@ strong {
 
 .sponsor-logo-gold {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, 1fr);
   justify-items: left;
 }
 
-/* BIGGER SCREENS */
+/* Footer */
+
+footer {
+  background: url("images/people.jpg") center no-repeat#8AA6E1;
+  background-size: cover;
+  color: #FFF;
+  height: 26em;
+}
+
+footer h1 {
+  font-size: 2.69rem;
+  font-weight: 100;
+  padding: .618em 0 .618em;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 31px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.banner-footer {
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  width: 100%;
+}
+
+
+/******************************
+
+        BIGGER SCREENS
+
+*******************************/
 
 /* circa Ipad size */
 @media (min-width: 35em){
@@ -273,9 +319,6 @@ strong {
     font-weight: normal;
   }
 
-  nav a:hover {
-    text-decoration: underline;
-  }
 
   /* Header */
   header {
@@ -337,6 +380,25 @@ strong {
 
   .schedule-photo {
     position: static;
+  }
+
+  /* Sponsers */
+
+  .sponsor-logo-platinum {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: left;
+  }
+
+  .sponsor-logo-gold {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: left;
+  }
+
+  /* Footer */
+  .banner-footer {
+    padding-left: 23.7em;
   }
 }
 
