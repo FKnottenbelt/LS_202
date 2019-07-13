@@ -254,7 +254,7 @@ footer {
   background: url("images/people.jpg") center no-repeat#8AA6E1;
   background-size: cover;
   color: #FFF;
-  height: 26em;
+  padding-bottom: 20px;
 }
 
 footer h1 {
@@ -271,17 +271,22 @@ footer h2 {
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 1.23rem;
   font-weight: 300;
-  line-height: 25px;
 }
 
 .banner-footer {
   background: rgba(0,0,0,0.7);
-  padding: 10px;
+  padding: 10px 40px;
   width: 100%;
 }
 
+.footer-team {
+  text-align: left;
+  padding: 0 4.46em;
+  max-width: 68em;
+  margin: 0 auto;
+}
 
 /******************************
 
@@ -396,9 +401,8 @@ footer p {
     justify-items: left;
   }
 
-  /* Footer */
-  .banner-footer {
-    padding-left: 23.7em;
+  footer h1 {
+  font-size: 3.69rem;
   }
 }
 
@@ -406,5 +410,4 @@ footer p {
   .schedule-photo img {
     width: 130px;
   }
-
 }
